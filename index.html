@@ -45,15 +45,11 @@
 			<nav class="navbar navbar-static-top" role="navigation">
 
 
-				<a href="index2.html" class="logo">
+				<a href="index.html" class="logo">
 					<!-- mini logo for sidebar mini 50x50 pixels -->
 					<span class="logo-mini"><b><img src="dist/img/VBT_logo_white.png" class="img-responsive" alt="User Image"></b></span>
 					<!-- logo for regular state and mobile devices -->
 					<span class="logo-lg"><b><img src="dist/img/VBT_logo_white.png" class="img-responsive" alt="User Image"></b></span>
-				</a>
-				<!-- Sidebar toggle button-->
-				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-					<span class="sr-only">Toggle navigation</span>
 				</a>
 				<!-- Sidebar toggle button-->
 				<div class="navbar-custom-menu">
@@ -63,48 +59,7 @@
 			<li class="header" style="height:4px; background-color:#cf1526"></li>
 		</header>
       <!-- Left side column. contains the logo and sidebar -->
-      <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-		  <section class="sidebar">
-		  	<!-- Sidebar user panel -->
-		  	<!-- /.search form -->
-		  	<!-- sidebar menu: : style can be found in sidebar.less -->
-		  	
-		  	<ul class="sidebar-menu">
-		  		
-		  		<li class="active treeview">
-		  			<a href="#">
-		  				<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
-		  			</a>
-		  			<ul class="treeview-menu">
-		  				<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Pipeline</a></li>
-		  				<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Loans in Progress</a></li>
-		  				<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Active Work Items</a></li>
-		  				<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Document Exception</a></li>
-		  			</ul>
-		  		</li>
-		  		<li class="treeview">
-		  			<a href="#">
-		  				<i class="fa fa-files-o"></i>
-		  				<span>Reports</span>
-		  				<span class="label label-primary pull-right"></span>
-		  			</a>
-		  			<ul class="treeview-menu">
-		  				<li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-		  				<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-		  				<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-		  				<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
-		  			</ul>
-		  		</li>
-		  		<li>
-		  			<a href="pages/widgets.html">
-		  				<i class="fa fa-th"></i> <span>Utilities</span> <small class="label pull-right bg-green"></small>
-		  			</a>
-		  		</li>
 
-		  </section>
-        <!-- /.sidebar -->
-      </aside>
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
@@ -114,10 +69,52 @@
         </section>
 
         <!-- Main content -->
-        <section class="content">
-         
+		<section class="content">
+			<aside class="main-sidebar">
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+					<!-- Sidebar user panel -->
+					<!-- /.search form -->
+					<!-- sidebar menu: : style can be found in sidebar.less -->
 
-        </section><!-- /.Left col -->
+					<ul class="sidebar-menu">
+
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="treeview-menu">
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Pipeline</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Loans in Progress</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Active Work Items</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Document Exception</a></li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-files-o"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Report #1</a></li>
+								<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Report #2</a></li>
+								<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Report #3</a></li>
+								<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Report #4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-star-o"></i> <span>Utilities</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+						</li>
+
+				</section>
+				<header class="main-header">
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+				</header>
+			</aside>
+		</section><!-- /.Left col -->
             <!-- right col (We are only adding the ID to make the widgets sortable)-->
             <section class="col-lg-5 connectedSortable">
 
@@ -125,14 +122,12 @@
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
-      <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-          <b>Version</b> 1.0
-        </div>
-		<strong>Vantage Bank Texas &copy; 2019 <a href="https://www.vantage.bank/en/privacy-security-disclosures/">Privacy, Security & Disclosures</a> </strong> All rights reserved.
-      </footer>
-
-
+	  <footer class="main-footer">
+	  		<div class="pull-right hidden-xs">
+	  			<b>Version</b> 1.0
+	  		</div>
+	  		<strong>Vantage Bank Texas &copy; 2019 <a href="https://www.vantage.bank/en/privacy-security-disclosures/">Privacy, Security & Disclosures</a> </strong> All rights reserved.
+	  </footer>
     </div>
 
 
