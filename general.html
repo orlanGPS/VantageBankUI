@@ -55,54 +55,8 @@
 		</nav>
 		<li class="header" style="height:4px; background-color:#cf1526"></li>
 	</header>
-	<div class="main-sidebar">
-		<section>
-			<aside class="main-sidebar">
-				<!-- sidebar: style can be found in sidebar.less -->
-				<section class="sidebar">
-					<!-- Sidebar user panel -->
-					<!-- /.search form -->
-					<!-- sidebar menu: : style can be found in sidebar.less -->
-					<ul class="sidebar-menu">
-						<li class="treeview">
-							<a href="#">
-								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
-							</a>
-							<ul class="treeview-menu">
-								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> Pipeline</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Loans in Progress</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Active Work Items</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Document Exception</a></li>
-							</ul>
-						</li>
-						<li class="treeview">
-							<a href="#">
-								<i class="fa fa-files-o"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i>
-							</a>
-							<ul class="treeview-menu">
-								<li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Report #1</a></li>
-								<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Report #2</a></li>
-								<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Report #3</a></li>
-								<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Report #4</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star-o"></i> <span>Utilities</span> <i class="fa fa-angle-left pull-right"></i>
-							</a>
-						</li>
-					</ul>
-				</section>
-				<header class="main-header">
-					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-						<span class="sr-only">Toggle navigation</span>
-					</a>
-				</header>
-			</aside>
-		</section>
-		<section class="col-lg-5 connectedSortable"></section>
-	</div>
-<div class="content-wrapper">
+
+ <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header"></section>
 
@@ -144,7 +98,7 @@
                                     <i class="fa fa-star-o"></i> <span>Utilities</span> <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                             </li>
-
+                        </ul>
                     </section>
                     <header class="main-header">
                         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -153,8 +107,26 @@
                     </header>
                 </aside>
 
-                <!-- START CUSTOM TABS -->
-                <h2 class="page-header">Collaterial Detail View</h2>
+            <!-- START CUSTOM TABS -->
+            <h2 class="page-header">Collateral Summary</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        
+                            <div class="form-group">
+                                <label for="inputEmail3">Collateral Code</label>
+                                <input class="form-control" id="inputPassword3" value="$1,200,000.00">
+                            </div>
+
+                       
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputEmail3">Total LTV</label>
+                            <input class="form-control" id="inputPassword3" value="88.33%">
+                        </div>
+                    </div>
+                </div>
+                <h2 class="page-header">Collateral Detail View</h2>
                 <div class="row">
                     <div class="col-md-12">
                         <!-- Custom Tabs -->
@@ -215,18 +187,21 @@
                                                                 <label for="inputPassword3">State</label>
                                                                 <input class="form-control" id="inputPassword3">
                                                             </div>
+                                                            <div class="form-group">
+                                                                <label for="inputPassword3">Description</label>
+
+                                                                <input class="form-control" id="inputPassword3">
+
+                                                            </div>
                                                         </div><!-- /.box-body -->
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="box-body">
+                                                            <br />
                                                             <div class="form-group">
-                                                                <input type="" class="form-control" id="inputEmail3">
-                                                                <label for="inputEmail3">Descripton</label>
+                                                                <input type="checkbox"> Primary
                                                             </div>
-                                                            <div class="form-group">
-                                                                <label for="inputEmail3">Descripton</label>
-                                                                <input type="email" class="form-control" id="inputEmail3">
-                                                            </div>
+                                                            <br />
                                                             <div class="form-group">
                                                                 <label for="inputPassword3">Collateral Owner Occupied</label>
                                                                 <select class="form-control">
@@ -470,7 +445,7 @@
                                 </div>
 
                                 <div class="tab-pane" id="tab_2">
-                                   Collateral 2 - Non-Real Estate
+                                    Collateral 2 - Non-Real Estate
                                 </div><!-- /.tab-pane -->
                             </div>
                             <!-- /.tab-pane -->
@@ -520,12 +495,12 @@
 	<!-- AdminLTE for demo purposes -->
 	<script src="dist/js/demo.js"></script>
 
-	<footer class="main-footer" style="margin-top: 106px">
+	
+</body>
+<footer class="main-footer" style="margin-top: 106px">
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0
 		</div>
 		<strong>Vantage Bank Texas &copy; 2019 <a href="https://www.vantage.bank/en/privacy-security-disclosures/">Privacy, Security & Disclosures</a> </strong> All rights reserved.
 	</footer>
-</body>
-
 </html>
