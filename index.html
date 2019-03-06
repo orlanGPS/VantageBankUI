@@ -40,6 +40,7 @@
 	<header class="main-header">
 		<!-- Logo -->
 		<!-- Header Navbar: style can be found in header.less -->
+
 		<nav class="navbar navbar-static-top" role="navigation">
 
 			<a href="index.html" class="logo">
@@ -49,9 +50,13 @@
 				<span class="logo-lg"><b><img src="dist/img/VBT_logo_white.png" class="img-responsive" alt="User Image"></b></span>
 			</a>
 			<!-- Sidebar toggle button-->
+			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+				<span class="sr-only">Toggle navigation</span>
+			</a>
 			<div class="navbar-custom-menu">
 				<ul class="nav navbar-nav"></ul>
 			</div>
+
 		</nav>
 		<li class="header" style="height:4px; background-color:#cf1526"></li>
 	</header>
@@ -93,14 +98,8 @@
 						</li>
 					</ul>
 				</section>
-				<header class="main-header">
-					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-						<span class="sr-only">Toggle navigation</span>
-					</a>
-				</header>
 			</aside>
 		</section>
-		<section class="col-lg-5 connectedSortable"></section>
 	</div>
 
 	<!-- jQuery 2.1.4 -->
@@ -150,3 +149,10 @@
 </body>
 
 </html>
+
+<style type="text/css">
+
+	body {
+		overflow: hidden;
+	}
+</style>

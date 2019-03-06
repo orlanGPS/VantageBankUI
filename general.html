@@ -49,6 +49,9 @@
 				<span class="logo-lg"><b><img src="dist/img/VBT_logo_white.png" class="img-responsive" alt="User Image"></b></span>
 			</a>
 			<!-- Sidebar toggle button-->
+			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+				<span class="sr-only">Toggle navigation</span>
+			</a>
 			<div class="navbar-custom-menu">
 				<ul class="nav navbar-nav"></ul>
 			</div>
@@ -56,407 +59,438 @@
 		<li class="header" style="height:4px; background-color:#cf1526"></li>
 	</header>
 
- <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header"></section>
-
-            <!-- Main content -->
-            <section class="content">
-                <aside class="main-sidebar">
-                    <!-- sidebar: style can be found in sidebar.less -->
-                    <section class="sidebar">
-                        <!-- Sidebar user panel -->
-                        <!-- /.search form -->
-                        <!-- sidebar menu: : style can be found in sidebar.less -->
-
-                        <ul class="sidebar-menu">
-
-                            <li class="treeview">
-                                <a href="#">
-                                    <i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
-                                </a>
-                                <ul class="treeview-menu">
-                                    <li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> Pipeline</a></li>
-                                    <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Loans in Progress</a></li>
-                                    <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Active Work Items</a></li>
-                                    <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Document Exception</a></li>
-                                </ul>
-                            </li>
-                            <li class="treeview">
-                                <a href="#">
-                                    <i class="fa fa-files-o"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i>
-                                </a>
-                                <ul class="treeview-menu">
-                                    <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Report #1</a></li>
-                                    <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Report #2</a></li>
-                                    <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Report #3</a></li>
-                                    <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Report #4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-star-o"></i> <span>Utilities</span> <i class="fa fa-angle-left pull-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    <header class="main-header">
-                        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                            <span class="sr-only">Toggle navigation</span>
-                        </a>
-                    </header>
-                </aside>
-
-            <!-- START CUSTOM TABS -->
-            <h2 class="page-header">Collateral Summary</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        
-                            <div class="form-group">
-                                <label for="inputEmail3">Collateral Code</label>
-                                <input class="form-control" id="inputPassword3" value="$1,200,000.00">
-                            </div>
-
-                       
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="inputEmail3">Total LTV</label>
-                            <input class="form-control" id="inputPassword3" value="88.33%">
-                        </div>
-                    </div>
-                </div>
-                <h2 class="page-header">Collateral Detail View</h2>
-                <div class="row">
-                    <div class="col-md-12">
-                        <!-- Custom Tabs -->
-                        <div class="nav-tabs-custom">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#tab_1" data-toggle="tab">Collateral 1 -Real Estate</a></li>
-                                <li><a href="#tab_2" data-toggle="tab">Collateral 2 - Non-Real Estate</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="tab_1">
-                                    <form class="form-horizontal">
-                                        <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#tab_3" data-toggle="tab">info</a></li>
-                                            <li><a href="#tab_4" data-toggle="tab">Valuation</a></li>
-                                            <li><a href="#tab_5" data-toggle="tab">FDICIA</a></li>
-                                            <li><a href="#tab_6" data-toggle="tab">Comments</a></li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div class="tab-pane active" id="tab_3">
-                                                <br />
-                                                <div class="row">
-
-                                                    <div class="col-md-6">
-                                                        <div class="box-body">
-                                                            <div class="form-group">
-                                                                <label for="inputEmail3">Collateral Code</label>
-                                                                <select class="form-control">
-                                                                    <option>153 - SF Residential Non-Owner Occupied </option>
-                                                                    <option>option 2</option>
-                                                                    <option>option 3</option>
-                                                                    <option>option 4</option>
-                                                                    <option>option 5</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Description</label>
+	<div class="content-wrapper">
+		<!-- Content Header (Page header) -->
+		<section class="content-header"></section>
+
+		<!-- Main content -->
+		<section class="content">
+			<aside class="main-sidebar">
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+					<!-- Sidebar user panel -->
+					<!-- /.search form -->
+					<!-- sidebar menu: : style can be found in sidebar.less -->
+
+					<ul class="sidebar-menu">
+
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="treeview-menu">
+								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> Pipeline</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Loans in Progress</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Active Work Items</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Document Exception</a></li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-files-o"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Report #1</a></li>
+								<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Report #2</a></li>
+								<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Report #3</a></li>
+								<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Report #4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-star-o"></i> <span>Utilities</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<header class="main-header">
+					<a href="#" class="sidebar-toggle2" data-toggle="offcanvas" role="button">
+						
+					</a>
+				</header>
+			</aside>
+
+			<!-- START CUSTOM TABS -->
+			<h2 class="page-header">Collateral Summary</h2>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="form-group">
+						<label for="inputEmail3">Collateral Code</label>
+						<input class="form-control" id="inputPassword3" value="$1,200,000.00">
+					</div>
+
+
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="inputEmail3">Total LTV</label>
+						<input class="form-control" id="inputPassword3" value="88.33%">
+					</div>
+				</div>
+			</div>
+			<h2 class="page-header">Collateral Detail View</h2>
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Custom Tabs -->
+					<div class="nav-tabs-custom">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab_1" data-toggle="tab">Collateral 1 -Real Estate</a></li>
+							<li><a href="#tab_2" data-toggle="tab">Collateral 2 - Non-Real Estate</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab_1">
+								<form class="form-horizontal">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#tab_3" data-toggle="tab">info</a></li>
+										<li><a href="#tab_4" data-toggle="tab">Valuation</a></li>
+										<li><a href="#tab_5" data-toggle="tab">FDICIA</a></li>
+										<li><a href="#tab_6" data-toggle="tab">Comments</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab_3">
+											<br />
+											<div class="row">
+
+												<div class="col-md-6">
+													<div class="box-body">
+														<div class="form-group">
+															<label for="inputEmail3">Collateral Code</label>
+															<select class="form-control">
+																<option>153 - SF Residential Non-Owner Occupied </option>
+																<option>option 2</option>
+																<option>option 3</option>
+																<option>option 4</option>
+																<option>option 5</option>
+															</select>
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Description</label>
+
+															<input class="form-control" id="inputPassword3">
+
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Borrower Owns Collateral</label>
+
+															<input class="form-control" id="inputPassword3">
 
-                                                                <input class="form-control" id="inputPassword3">
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Property Address</label>
 
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Borrower Owns Collateral</label>
+															<input class="form-control" id="inputPassword3">
 
-                                                                <input class="form-control" id="inputPassword3">
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Country</label>
+															<input class="form-control" id="inputPassword3">
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">State</label>
+															<input class="form-control" id="inputPassword3">
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Description</label>
 
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Property Address</label>
+															<input class="form-control" id="inputPassword3">
 
-                                                                <input class="form-control" id="inputPassword3">
+														</div>
+													</div><!-- /.box-body -->
+												</div>
+												<div class="col-md-6">
+													<div class="box-body">
+														<br />
+														<div class="form-group">
+															<input type="checkbox"> Primary
+														</div>
+														<br />
+														<div class="form-group">
+															<label for="inputPassword3">Collateral Owner Occupied</label>
+															<select class="form-control">
+																<option>Select.. </option>
+															</select>
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Flood Zone</label>
 
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Country</label>
-                                                                <input class="form-control" id="inputPassword3">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">State</label>
-                                                                <input class="form-control" id="inputPassword3">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Description</label>
+															<select class="form-control">
+																<option>Select.. </option>
 
-                                                                <input class="form-control" id="inputPassword3">
+															</select>
 
-                                                            </div>
-                                                        </div><!-- /.box-body -->
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="box-body">
-                                                            <br />
-                                                            <div class="form-group">
-                                                                <input type="checkbox"> Primary
-                                                            </div>
-                                                            <br />
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Collateral Owner Occupied</label>
-                                                                <select class="form-control">
-                                                                    <option>Select.. </option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Flood Zone</label>
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">City</label>
 
-                                                                <select class="form-control">
-                                                                    <option>Select.. </option>
+															<input class="form-control" id="inputPassword3">
 
-                                                                </select>
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Postal Code</label>
 
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">City</label>
+															<input class="form-control" id="inputPassword3">
 
-                                                                <input class="form-control" id="inputPassword3">
+														</div>
+														<div class="form-group">
+															<label for="inputPassword3">Subject to Release Price</label>
 
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Postal Code</label>
+															<input class="form-control" id="inputPassword3">
 
-                                                                <input class="form-control" id="inputPassword3">
+														</div>
 
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="inputPassword3">Subject to Release Price</label>
+													</div><!-- /.box-body -->
 
-                                                                <input class="form-control" id="inputPassword3">
 
-                                                            </div>
-                                                        </div><!-- /.box-body -->
+												</div>
 
+											</div>
 
-                                                    </div>
+										</div>
 
+										<div class="tab-pane" id="tab_4">
+											<br />
+											<div class="row">
+												<div id="hiddenDiv2">
 
+													<div class="col-md-6">
+														<div class="box-body">
+															<div class="form-group">
+																<label for="inputEmail3">Outstanding Lien Amount:</label>
+																<input class="form-control" id="inputPassword3" placeholder="$">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Estimated Value:</label>
 
+																<input class="form-control" id="inputPassword3" placeholder="$">
 
-                                                </div>
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Appraised As Completed:</label>
 
-                                            </div>
+																<input class="form-control" id="inputPassword3" placeholder="$">
 
-                                            <div class="tab-pane" id="tab_4">
-                                                <br />
-                                                <div class="row">
-                                                    <div id="hiddenDiv2">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Source of Valuation:</label>
 
-                                                        <div class="col-md-6">
-                                                            <div class="box-body">
-                                                                <div class="form-group">
-                                                                    <label for="inputEmail3">Outstanding Lien Amount:</label>
-                                                                    <input class="form-control" id="inputPassword3" placeholder="$">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Estimated Value:</label>
+																<input class="form-control" id="inputPassword3">
 
-                                                                    <input class="form-control" id="inputPassword3" placeholder="$">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Appraisal Delivery Method:</label>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Appraised As Completed:</label>
 
-                                                                    <input class="form-control" id="inputPassword3" placeholder="$">
+																<select class="form-control">
+																	<option>Select..</option>
+																	<option></option>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Source of Valuation:</label>
+																</select>
 
-                                                                    <input class="form-control" id="inputPassword3">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Estimated LTV:</label>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Appraisal Delivery Method:</label>
+																<input class="form-control" id="inputPassword3">
 
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">CC Loan Numbers:</label>
 
-                                                                    <select class="form-control">
-                                                                        <option>Select..</option>
-                                                                        <option></option>
+																<input class="form-control" id="inputPassword3">
 
-                                                                    </select>
+															</div>
+														</div><!-- /.box-body -->
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Estimated LTV:</label>
 
-                                                                    <input class="form-control" id="inputPassword3">
+													</div>
+													<div class="col-md-6">
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">CC Loan Numbers:</label>
 
-                                                                    <input class="form-control" id="inputPassword3">
+														<div class="box-body">
+															<div class="form-group">
+																<label for="inputEmail3">Cross-Collatelized:</label>
 
-                                                                </div>
-                                                            </div><!-- /.box-body -->
+																<select class="form-control">
+																	<option>No</option>
+																	<option>Si</option>
 
+																</select>
 
-                                                        </div>
-                                                        <div class="col-md-6">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Outstanding Lien Loan Number:</label>
 
+																<input class="form-control" id="inputPassword3">
 
-                                                            <div class="box-body">
-                                                                <div class="form-group">
-                                                                    <label for="inputEmail3">Cross-Collatelized:</label>
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Appraised AS is:</label>
 
-                                                                    <select class="form-control">
-                                                                        <option>No</option>
-                                                                        <option>Si</option>
+																<input class="form-control" id="inputPassword3" placeholder="$">
 
-                                                                    </select>
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Appraised AS Stabilized:</label>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Outstanding Lien Loan Number:</label>
+																<input class="form-control" id="inputPassword3" placeholder="$">
 
-                                                                    <input class="form-control" id="inputPassword3">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Date of Valuation:</label>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Appraised AS is:</label>
+																<input class="form-control" id="inputPassword3">
 
-                                                                    <input class="form-control" id="inputPassword3" placeholder="$">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Appraisal Delivery Date:</label>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Appraised AS Stabilized:</label>
+																<input class="form-control" id="inputPassword3">
 
-                                                                    <input class="form-control" id="inputPassword3" placeholder="$">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Abundance of Caution:</label>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Date of Valuation:</label>
+																<input class="form-control" id="inputPassword3">
 
-                                                                    <input class="form-control" id="inputPassword3">
+															</div>
+														</div><!-- /.box-body -->
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Appraisal Delivery Date:</label>
 
-                                                                    <input class="form-control" id="inputPassword3">
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Abundance of Caution:</label>
+										<div class="tab-pane" id="tab_5">
+											<br />
+											<div class="row">
+												<div id="hiddenDiv2">
 
-                                                                    <input class="form-control" id="inputPassword3">
+													<div class="col-md-6">
+														<div class="box-body">
+															<div class="form-group">
+																<label for="inputEmail3">Purchase Money:</label>
+																<select class="form-control">
+																	<option>No</option>
+																	<option>Si</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Cost/ Sales Price:</label>
 
-                                                                </div>
-                                                            </div><!-- /.box-body -->
+																<input class="form-control" id="inputPassword3" ">
 
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Additional Collateral Value (Discounted)</label>
 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+																<input class="form-control" id="inputPassword3">
 
-                                            <div class="tab-pane" id="tab_5">
-                                                <br />
-                                                <div class="row">
-                                                    <div id="hiddenDiv2">
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Actual value</label>
 
-                                                        <div class="col-md-6">
-                                                            <div class="box-body">
-                                                                <div class="form-group">
-                                                                    <label for="inputEmail3">Purchase Money:</label>
-                                                                    <select class="form-control">
-                                                                        <option>No</option>
-                                                                        <option>Si</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Cost/ Sales Price:</label>
+																<input class="form-control" id="inputPassword3">
 
-                                                                    <input class="form-control" id="inputPassword3" ">
+															</div>
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+														</div><!-- /.box-body -->
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Additional Collateral Value (Discounted)</label>
 
-                                                                    <input class="form-control" id="inputPassword3">
+													</div>
+													<div class="col-md-6">
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Actual value</label>
 
-                                                                    <input class="form-control" id="inputPassword3">
+														<div class="box-body">
 
-                                                                </div>
+															<div class="form-group">
+																<label for="inputPassword3">Federal Appraisal Guideline Used</label>
 
-                                                            </div><!-- /.box-body -->
+																<select class="form-control">
+																	<option>Select..</option>
+																	<option></option>
+																</select>
 
+															</div>
+															<div class="form-group">
+																<label for="inputEmail3">Appraised Value</label>
 
-                                                        </div>
-                                                        <div class="col-md-6">
+																<input type="email" class="form-control" id="inputEmail3">
 
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3">Actual LTV</label>
 
-                                                            <div class="box-body">
+																<input type="email" class="form-control" id="inputEmail3" value="1000.0000%">
 
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Federal Appraisal Guideline Used</label>
 
-                                                                    <select class="form-control">
-                                                                        <option>Select..</option>
-                                                                        <option></option>
-                                                                    </select>
+															</div>
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputEmail3">Appraised Value</label>
+														</div><!-- /.box-body -->
 
-                                                                    <input type="email" class="form-control" id="inputEmail3">
 
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword3">Actual LTV</label>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                                                    <input type="email" class="form-control" id="inputEmail3" value="1000.0000%">
+										<div class="tab-pane" id="tab_6">
+											<br />
+											<div class="row">
+												<textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+											</div>
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+											<br />
+										</div>
+									</div>
+								</form>
+							</div>
 
+							<div class="tab-pane" id="tab_2">
+								Collateral 2 - Non-Real Estate
+							</div><!-- /.tab-pane -->
+						</div>
+						<!-- /.tab-pane -->
+					</div><!-- /.tab-content -->
+				</div><!-- nav-tabs-custom -->
+			</div><!-- /.col -->
+			<!-- END CUSTOM TABS -->
+		</section><!-- /.Left col -->
+		<!-- right col (We are only adding the ID to make the widgets sortable)-->
 
-                                                                </div>
-
-                                                            </div><!-- /.box-body -->
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="tab-pane" id="tab_6">
-                                                <br />
-                                                <div class="row">
-                                                    <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="tab-pane" id="tab_2">
-                                    Collateral 2 - Non-Real Estate
-                                </div><!-- /.tab-pane -->
-                            </div>
-                            <!-- /.tab-pane -->
-                        </div><!-- /.tab-content -->
-                    </div><!-- nav-tabs-custom -->
-                </div><!-- /.col -->
-                <!-- END CUSTOM TABS -->
-            </section><!-- /.Left col -->
-            <!-- right col (We are only adding the ID to make the widgets sortable)-->
-            <section class="col-lg-5 connectedSortable"></section><!-- /.content -->
-        </div><!-- /.content-wrapper -->
+	</div><!-- /.content-wrapper -->
 	<!-- jQuery 2.1.4 -->
 	<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
 	<!-- jQuery UI 1.11.4 -->
@@ -494,13 +528,23 @@
 	<script src="dist/js/pages/dashboard.js"></script>
 	<!-- AdminLTE for demo purposes -->
 	<script src="dist/js/demo.js"></script>
-
-	
-</body>
-<footer class="main-footer" style="margin-top: 106px">
+	<footer class="main-footer" style="margin-top: 4px;">
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0
 		</div>
 		<strong>Vantage Bank Texas &copy; 2019 <a href="https://www.vantage.bank/en/privacy-security-disclosures/">Privacy, Security & Disclosures</a> </strong> All rights reserved.
 	</footer>
+
+</body>
+
 </html>
+
+<style>
+	.main-header .sidebar-toggle2 {
+		float: left;
+		background-color: transparent;
+		background-image: none;
+		padding: 420px 18px;
+		font-family: fontAwesome
+	}
+</style>
