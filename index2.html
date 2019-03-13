@@ -54,9 +54,10 @@
 			<div class="navbar-custom-menu">
 				<section class="content-header">
 
-					<ol class="breadcrumb" style="width:160px">
+					<ol class="breadcrumb" style="width:392px">
 						<li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
-						<li class="active">Dashboard</li>
+						<li style="color:#fff">Credit Workbench </li>
+						<li class="active">000007</li>
 					</ol>
 				</section>
 				<ul class="nav navbar-nav" style="margin-top: -15px">
@@ -99,19 +100,57 @@
 							<ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
 								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
 
-								<li class="treeview">
+								<li class="treeview active">
 									<a href="#" style="margin-left: 13%;">
 										<span>Credit Workbench</span>
 										<span class="pull-right-container">
 											<i class="fa fa-angle-left pull-right"></i>
 										</span>
 									</a>
-									<ul class="treeview-menu">
+									<ul class="treeview-menu active">
 										<li>
 											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
 												<i class="fa @seventhLevel.NombreImagen"></i>
-												<span>Loan</span>
+												<span>Loan 000007
+													<i class="fa fa-angle-down pull-right"></i>
+												</span>
 											</a>
+											<ul class="treeview-menu">
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span style="margin-left: -17px">
+															Home
+															<i class="fa fa-home pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span style="margin-left: -17px">
+															Loan Documents
+															<i class="fa fa-file-text-o pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span style="margin-left: -17px">View All Documents
+															<i class="fa fa-files-o pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>Customer Documents
+															<i class="fa fa-users pull-left" style="margin-top: -18px"></i>
+														</span>
+													</a>
+												</li>
+											</ul>
 										</li>
 
 									</ul>
