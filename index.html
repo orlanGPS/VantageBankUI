@@ -37,9 +37,7 @@
 </head>
 
 <body class="skin-blue sidebar-mini">
-	<header class="main-header">
-		<!-- Logo -->
-		<!-- Header Navbar: style can be found in header.less -->
+	<header class="main-header" style="width: 1358px; position:fixed">
 
 		<nav class="navbar navbar-static-top" role="navigation">
 
@@ -54,54 +52,81 @@
 				<span class="sr-only">Toggle navigation</span>
 			</a>
 			<div class="navbar-custom-menu">
-				<ul class="nav navbar-nav"></ul>
-			</div>
+				<section class="content-header">
 
+					<ol class="breadcrumb" style="width:160px">
+						<li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
+						<li class="active">Dashboard</li>
+					</ol>
+				</section>
+				<ul class="nav navbar-nav" style="margin-top: -15px">
+					<li class="input-group" style="width: 138px; height: 34px; margin-left: -38px; margin-top: 8px">
+						<input type="text" name="q" class="form-control" placeholder="Keywords..">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat" style="margin-left: -39px; background-color: #d2d6de; color:#003678"><i class="fa fa-search"></i></button>
+						</span>
+					</li>
+					<li class="dropdown messages-menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-home"></i>
+
+						</a>
+
+					</li>
+
+				</ul>
+			</div>
 		</nav>
 		<li class="header" style="height:4px; background-color:#cf1526"></li>
 	</header>
 	<div class="main-sidebar">
 		<section>
-			<aside class="main-sidebar">
-				<!-- sidebar: style can be found in sidebar.less -->
+			<aside class="main-sidebar" style="height: 451%;">
 				<section class="sidebar">
-					<!-- Sidebar user panel -->
-					<!-- /.search form -->
-					<!-- sidebar menu: : style can be found in sidebar.less -->
 					<ul class="sidebar-menu">
 						<li class="treeview">
 							<a href="#">
 								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
 							</a>
-							<ul class="treeview-menu">
-								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> Pipeline</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Loans in Progress</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Active Work Items</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Document Exception</a></li>
+							<ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
+								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
+
+								<li class="treeview">
+									<a href="#" style="margin-left: 13%;">
+										<span>Dashboard</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+
+
+								</li>
+
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Reports</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Utilities</a></li>
+
 							</ul>
-						</li>
-						<li class="treeview">
-							<a href="#">
-								<i class="fa fa-files-o"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i>
-							</a>
-							<ul class="treeview-menu">
-								<li><a href="index2.html"><i class="fa fa-circle-o"></i> Report #1</a></li>
-								<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Report #2</a></li>
-								<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Report #3</a></li>
-								<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Report #4</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star-o"></i> <span>Utilities</span> <i class="fa fa-angle-left pull-right"></i>
-							</a>
 						</li>
 					</ul>
 				</section>
+				<header class="main-header">
+					<a href="#" class="sidebar-toggle2" data-toggle="offcanvas" role="button">
+
+					</a>
+				</header>
 			</aside>
 		</section>
 	</div>
-
+	<section class="content-header">
+		<h1>
+			Dashboard
+			<small>Control panel</small>
+		</h1>
+		<ol class="breadcrumb">
+			<li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+			<li class="active">Dashboard</li>
+		</ol>
+	</section>
 	<!-- jQuery 2.1.4 -->
 	<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
 	<!-- jQuery UI 1.11.4 -->
@@ -149,10 +174,3 @@
 </body>
 
 </html>
-
-<style type="text/css">
-
-	body {
-		overflow: hidden;
-	}
-</style>

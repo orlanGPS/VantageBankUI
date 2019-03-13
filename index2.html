@@ -37,9 +37,8 @@
 </head>
 
 <body class="skin-blue sidebar-mini">
-	<header class="main-header">
-		<!-- Logo -->
-		<!-- Header Navbar: style can be found in header.less -->
+	<header class="main-header" style="width: 1358px; position:fixed">
+
 		<nav class="navbar navbar-static-top" role="navigation">
 
 			<a href="index.html" class="logo">
@@ -53,7 +52,32 @@
 				<span class="sr-only">Toggle navigation</span>
 			</a>
 			<div class="navbar-custom-menu">
-				<ul class="nav navbar-nav"></ul>
+				<section class="content-header">
+
+					<ol class="breadcrumb" style="width:160px">
+						<li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
+						<li class="active">Dashboard</li>
+					</ol>
+				</section>
+				<ul class="nav navbar-nav" style="margin-top: -15px">
+					<li class="input-group" style="width: 138px; height: 34px; margin-left: -38px; margin-top: 8px">
+						<input type="text" name="q" class="form-control" placeholder="Keywords..">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat" style="margin-left: -39px; background-color: #d2d6de; color:#003678"><i class="fa fa-search"></i></button>
+						</span>
+					</li>
+					<li class="dropdown messages-menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-home"></i>
+
+						</a>
+
+					</li>
+					<!-- Control Sidebar Toggle Button -->
+					<li>
+						<a href="#" data-toggle="control-sidebar"><i class="fa fa-chevron-down"></i></a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 		<li class="header" style="height:4px; background-color:#cf1526"></li>
@@ -66,40 +90,38 @@
 		<!-- Main content -->
 		<section class="content">
 			<aside class="main-sidebar" style="height: 451%;">
-				<!-- sidebar: style can be found in sidebar.less -->
 				<section class="sidebar">
-					<!-- Sidebar user panel -->
-					<!-- /.search form -->
-					<!-- sidebar menu: : style can be found in sidebar.less -->
-
 					<ul class="sidebar-menu">
-
 						<li class="treeview">
 							<a href="#">
 								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
 							</a>
-							<ul class="treeview-menu">
-								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> Pipeline</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Loans in Progress</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Active Work Items</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Document Exception</a></li>
+							<ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
+								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
+
+								<li class="treeview">
+									<a href="#" style="margin-left: 13%;">
+										<span>Credit Workbench</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<ul class="treeview-menu">
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>Loan</span>
+											</a>
+										</li>
+
+									</ul>
+
+								</li>
+
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Reports</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Utilities</a></li>
+
 							</ul>
-						</li>
-						<li class="treeview">
-							<a href="#">
-								<i class="fa fa-files-o"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i>
-							</a>
-							<ul class="treeview-menu">
-								<li><a href="index2.html"><i class="fa fa-circle-o"></i> Report #1</a></li>
-								<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Report #2</a></li>
-								<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Report #3</a></li>
-								<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Report #4</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star-o"></i> <span>Utilities</span> <i class="fa fa-angle-left pull-right"></i>
-							</a>
 						</li>
 					</ul>
 				</section>
@@ -112,6 +134,9 @@
 
 			<!-- START CUSTOM TABS -->
 			<div class="row">
+				<br />
+				<br />
+
 				<div class="col-md-6">
 					<div class="form-group">
 						<label for="inputEmail3">Select View</label>
@@ -156,17 +181,17 @@
 						<a href="#" class="btn btn-default fa fa-print" style='margin-left: 509px;margin-top: -285px;width:37px; height:28px' onclick=(@Model.FacturaID)>
 
 						</a>
-						<a href="#" class="btn btn-primary fa fa-angle-double-left" style= 'margin-top: -324px; margin-left: 425px;width:37px; height:28px' onclick=(@Model.FacturaID)>
-							
+						<a href="#" class="btn btn-primary fa fa-angle-double-left" style='margin-top: -324px; margin-left: 425px;width:37px; height:28px' onclick=(@Model.FacturaID)>
+
 						</a>
-						<a href="#" class="btn btn-primary fa fa-angle-double-right" style= 'margin-top: -364px; margin-left: 467px; width:37px; height:28px' onclick=(@Model.FacturaID)>
-							
+						<a href="#" class="btn btn-primary fa fa-angle-double-right" style='margin-top: -364px; margin-left: 467px; width:37px; height:28px' onclick=(@Model.FacturaID)>
+
 						</a>
 					</div>
 
 				</div>
 			</div>
-			
+
 
 			<label style="margin-left: 938px; color: #003768" for="inputPassword3">Loan Number: 000007</label>
 			<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Obligor Detail View</h2>
@@ -177,6 +202,32 @@
 						<h2 class="page-header" style="color: #997746">Obligor 1</h2>
 						<div class="tab-content">
 							<div class="tab-pane active" id="tab_1">
+								<div class="row">
+									<div class="col-md-2">
+										<label for="inputEmail3">Entity Type</label>
+									</div>
+									<div class="col-md-2">
+										<select class="form-control">
+											<option>Corporation</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+											<option>option 5</option>
+										</select>
+									</div>
+									<div class="col-xs-2">
+										<label for="inputPassword3">Tax ID / SSN</label>
+									</div>
+									<div class="col-md-2">
+										<input class="form-control" id="inputPassword3">
+									</div>
+									<div class="col-xs-2">
+										<label for="inputPassword3">Company Name</label>
+									</div>
+									<div class="col-md-2">
+										<input class="form-control" id="inputPassword3">
+									</div>
+								</div>
 								<form class="form-horizontal">
 									<div class="tab-content">
 										<div class="tab-pane active" id="tab_3">
@@ -609,16 +660,15 @@
 					</div>
 				</div>
 			</div>
-</div><!-- /.tab-pane -->
-</div>
-							<!-- /.tab-pane -->
-						</div><!-- /.tab-content -->
-					</div><!-- nav-tabs-custom -->
-				</div><!-- /.col -->
-				<!-- END CUSTOM TABS -->
-</section><!-- /.Left col -->
-		<!-- right col (We are only adding the ID to make the widgets sortable)-->
-
+	</div><!-- /.tab-pane -->
+	</div>
+	<!-- /.tab-pane -->
+	</div><!-- /.tab-content -->
+	</div><!-- nav-tabs-custom -->
+	</div><!-- /.col -->
+	<!-- END CUSTOM TABS -->
+	</section><!-- /.Left col -->
+	<!-- right col (We are only adding the ID to make the widgets sortable)-->
 	</div><!-- /.content-wrapper -->
 	<!-- jQuery 2.1.4 -->
 	<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
@@ -657,6 +707,22 @@
 	<script src="dist/js/pages/dashboard.js"></script>
 	<!-- AdminLTE for demo purposes -->
 	<script src="dist/js/demo.js"></script>
+	<aside class="control-sidebar control-sidebar-dark" style="width: 198px; height: 451%">
+		<ul class="nav nav-tabs nav-justified control-sidebar-tabs"></ul>
+		<div class="tab-pane" id="control-sidebar-home-tab">
+			<ul class="control-sidebar-menu">
+				<li class="treeview" style="margin-top: 20px; margin-left: 15px">
+
+					<ul class="treeview-menu">
+						<li class="active"><a href="general.html"><i class="fa fa-home"></i> Home</a></li>
+						<li class="active"><a href="index.html"><i class="fa fa-file-text-o"></i> Loan Documents</a></li>
+						<li class="active"><a href="index.html"><i class="fa fa-files-o"></i> View All Documents</a></li>
+						<li class="active"><a href="index.html"><i class="fa fa-users"></i> Customer Documents</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</aside>
 	<footer class="main-footer" style="margin-top: 4px;">
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0
