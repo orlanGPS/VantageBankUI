@@ -53,7 +53,6 @@
 			</a>
 			<div class="navbar-custom-menu">
 				<section class="content-header">
-
 					<ol class="breadcrumb" style="right: 698px;width:392px; position:fixed">
 						<li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
 						<li style="color:#fff">Credit Workbench </li>
@@ -95,6 +94,12 @@
 								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
 
 								<li class="treeview active">
+									<a href="index.html" style="margin-left: 13%;">
+										<span>Dashboard</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
 									<a href="#" style="margin-left: 13%;">
 										<span>Credit Workbench</span>
 										<span class="pull-right-container">
@@ -105,7 +110,8 @@
 										<li>
 											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
 												<i class="fa @seventhLevel.NombreImagen"></i>
-												<span>Loan 000007
+												<span>
+													Loan 000007
 													<i class="fa fa-angle-down pull-right"></i>
 												</span>
 											</a>
@@ -113,7 +119,7 @@
 												<li>
 													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
 														<i class="fa @seventhLevel.NombreImagen"></i>
-														<span >
+														<span>
 															Credit Overview
 															<i class="fa  fa-angle-right pull-left"></i>
 														</span>
@@ -129,9 +135,9 @@
 													</a>
 												</li>
 												<li>
-													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)" style="font-weight: bold; font-style: italic;">
 														<i class="fa @seventhLevel.NombreImagen"></i>
-														<span >
+														<span>
 															Obligor
 															<i class="fa  fa-angle-right pull-left"></i>
 														</span>
@@ -698,10 +704,12 @@
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
 						<h2 class="page-header" style="color: #997746">ACE Credit Workbench</h2>
 						<ul class="treeview-menu">
-							<li class="active"><a href="general.html"><i class="fa fa-home"></i> Home</a></li>
-							<li class="active"><a href="index.html"><i class="fa fa-file-text-o"></i> Loan Documents</a></li>
-							<li class="active"><a href="index.html"><i class="fa fa-files-o"></i> View All Documents</a></li>
-							<li class="active"><a href="index.html"><i class="fa fa-users"></i> Customer Documents</a></li>
+							<li class="active"><a href="general.html"><i></i> CIP / CDD</a></li>
+							<li class="active"><a href="general.html"><i></i> Request Appraisal</a></li>
+							<li class="active"><a href="general.html"><i></i> Booking View</a></li>
+							<li class="active"><a href="general.html"><i></i> Create Renewal</a></li>
+							<li class="active"><a href="general.html"><i></i> Copy Loan</a></li>
+							<li class="active"><a href="general.html"><i></i> View All Documents</a></li>
 						</ul>
 					</li>
 				</ul>
