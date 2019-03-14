@@ -37,7 +37,7 @@
 </head>
 
 <body class="skin-blue sidebar-mini">
-    <header class="main-header" style="width: 1358px; position:fixed">
+    <header class="main-header" style="width: 1345px; position:fixed">
 
         <nav class="navbar navbar-static-top" role="navigation">
 
@@ -54,18 +54,13 @@
             <div class="navbar-custom-menu">
                 <section class="content-header">
 
-                    <ol class="breadcrumb" style="width:160px">
+                    <ol class="breadcrumb" style="width:366px">
                         <li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
                         <li class="active">Dashboard</li>
                     </ol>
                 </section>
                 <ul class="nav navbar-nav" style="margin-top: -15px">
-                    <li class="input-group" style="width: 138px; height: 34px; margin-left: -38px; margin-top: 8px">
-                        <input type="text" name="q" class="form-control" placeholder="Keywords..">
-                        <span class="input-group-btn">
-                            <button type="submit" name="search" id="search-btn" class="btn btn-flat" style="margin-left: -39px; background-color: #d2d6de; color:#003678"><i class="fa fa-search"></i></button>
-                        </span>
-                    </li>
+                  
                     <li class="dropdown messages-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-home"></i>
@@ -90,14 +85,14 @@
                                 <i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
-                                <li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
+                                <li class="active"><a href="#"><i class="fa fa-circle-o"></i>Dashboard</a></li>
 
                                 <li class="treeview">
                                     <a href="#" style="margin-left: 13%;">
-                                        <span>Dashboard</span>
+                                        <!--<span>Dashboard</span>
                                         <span class="pull-right-container">
                                             <i class="fa fa-angle-left pull-right"></i>
-                                        </span>
+                                        </span>-->
                                     </a>
 
 
@@ -117,7 +112,7 @@
                 </header>
             </aside>
             <br />  <br />  <br />
-            <div class="row">
+            <div class="row" style="margin-left: -1%;">
                 <div class="col-md-12">
                     <form class="form-horizontal">
 
@@ -182,10 +177,26 @@
                                                 <td></td>
                                             </tr>
                                         </table>
+                                    
+                                    </div>
+                                    <div class="dataTables_paginate paging_simple_numbers pull-right" id="example2_paginate">
+                                        <ul class="pagination">
+
+                                            <li class="paginate_button previous disabled" id="example2_previous">
+                                                <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0">Previous</a>
+                                            </li>
+                                            <li class="paginate_button active"><a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0">1</a></li>
+                                            <li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0">2</a></li>
+
+                                            <li class="paginate_button next" id="example2_next">
+                                                <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0">Next</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <!-- /.box-body -->
                                 </div>
-                                <!-- /.box -->
+
+
                             </div>
                         </div>
 
@@ -219,7 +230,7 @@
                                                 <th>Days in Progress</th>
                                             </tr>
                                             <tr>
-                                                <td>00001</td>
+                                                <td><a href="index2.html">00007</a></td>
                                                 <td>First Deal Test</td>
                                                 <td>Cultivate-Staging</td>
                                                 <td>2/28/2019</td>
@@ -227,6 +238,7 @@
                                             </tr>
 
                                         </table>
+                                        
                                     </div>
                                     <!-- /.box-body -->
                                 </div>
@@ -265,7 +277,7 @@
                                             </tr>
                                             <tr>
                                                 <td></td>
-                                                <td><a href="enlacepagina.html">000001</a></td>
+                                                <td><a href="#">000007</a></td>
                                                 <td>Cultivate - Staging</td>
                                                 <td> 24 </td>
                                                 <td>Commercial Loan Approval</td>
@@ -308,6 +320,20 @@
                                             </tr>
                                         </table>
                                     </div>
+                                    <div class="dataTables_paginate paging_simple_numbers pull-right" id="example2_paginate">
+                                        <ul class="pagination">
+
+                                            <li class="paginate_button previous disabled" id="example2_previous">
+                                                <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0">Previous</a>
+                                            </li>
+                                            <li class="paginate_button active"><a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0">1</a></li>
+                                            <li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0">2</a></li>
+
+                                            <li class="paginate_button next" id="example2_next">
+                                                <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0">Next</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <!-- /.box-body -->
                                 </div>
                                 <!-- /.box -->
@@ -322,8 +348,6 @@
         </section>
 
     </div><!-- /.content-wrapper -->
-    
-  
     <!-- jQuery 2.1.4 -->
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
@@ -362,7 +386,7 @@
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
 
-    <footer class="main-footer" style="margin-top: 559px">
+    <footer class="main-footer">
         <div class="pull-right hidden-xs">
             <b>Version</b> 1.0
         </div>
