@@ -171,7 +171,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)" style="font-weight: bold; font-style: italic;">
+													<a href="FinancialTracking.html" style="font-weight: bold; font-style: italic;">
 														<i class="fa @seventhLevel.NombreImagen"></i>
 														<span>
 															Financial Tracking
@@ -256,17 +256,12 @@
 						<a href="#" class="btn btn-primary btn-sm ad-click-event" style='width:83px; height:29px' onclick=(@Model.FacturaID)>
 							Delegate
 						</a>
-						<a href="#" class="btn btn-default fa fa-print" style='margin-left: 509px;margin-top: -285px;width:37px; height:28px' onclick=(@Model.FacturaID)>
+						<a href="#" class="btn btn-default fa fa-print" style="    margin-left: 498px; margin-top: -110px;">
 
 						</a>
-						<a href="#" class="btn btn-primary fa fa-angle-double-left" style='margin-top: -324px; margin-left: 425px;width:37px; height:28px' onclick=(@Model.FacturaID)>
 
-						</a>
-						<a href="#" class="btn btn-primary fa fa-angle-double-right" style='margin-top: -364px; margin-left: 467px; width:37px; height:28px' onclick=(@Model.FacturaID)>
-
-						</a>
 					</div>
-					<h2 class="page-header" style="color: #997746"><b>Obligor 1</b></h2>
+					<h2 class="page-header col-md-12" style="color: #997746"><b>Borrower: Darling Creations Inc. (98534213)</b></h2>
 				</div>
 			</div>
 
@@ -275,15 +270,231 @@
 				<div class="col-md-12" style="margin-top: -26px">
 					<!-- Custom Tabs -->
 					<div class="nav-tabs-custom">
-						
+
 						<div class="tab-content">
 							<div class="tab-pane active" id="tab_1">
 
 								<div class="row">
-									<div class="col-md-2">
-										<label for="inputEmail3">Entity Type</label>
+									<div class="col-md-3">
+										<label for="inputPassword3">Tax</label>
 										<select class="form-control">
-											<option>Corporation</option>
+											<option>Tax Return / Compiled</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+											<option>option 5</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<label for="inputPassword3">Frequency</label>
+										<select class="form-control">
+											<option>Annually</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+											<option>option 5</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<label for="inputPassword3">Grace Period</label>
+										<input class="form-control" id="inputPassword3">
+									</div>
+									<div class="col-md-3">
+										<label for="inputPassword3">Document Date</label>
+										<input class="form-control" id="inputPassword3">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<select class="form-control">
+											<option>Company Prepared F/S</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+											<option>option 5</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<select class="form-control">
+											<option>Anually</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+											<option>option 5</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<input class="form-control" id="inputPassword3">
+									</div>
+									<div class="col-md-3">
+										<input class="form-control" id="inputPassword3">
+									</div>
+								</div>
+								<br />
+
+							</div>
+							<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Quantitative Covenants</h2>
+							<div class="row">
+								<div class="col-md-2">
+									<label for="inputPassword3">DSC</label>
+									<select class="form-control">
+										<option>Minimum DSC (Rolling Four Quarter)</option>
+										<option>option 2</option>
+										<option>option 3</option>
+										<option>option 4</option>
+										<option>option 5</option>
+									</select>
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Required</label>
+									<input class="form-control" id="inputPassword3" placeholder="1.2500">
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Actual</label>
+									<input class="form-control" id="inputPassword3" placeholder="1.2500">
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Frecuency</label>
+									<select class="form-control">
+										<option>Annually</option>
+									</select>
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Annual</label>
+									<input class="form-control" id="inputPassword3">
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Interin</label>
+									<input class="form-control" id="inputPassword3">
+								</div>
+							</div>
+
+							<br />
+							<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Borrowing Base</h2>
+							<div class="row">
+								<div class="col-md-2">
+									<label for="inputPassword3">Accounts</label>
+									<select class="form-control">
+										<option>Accounts Receivable</option>
+										<option>option 2</option>
+										<option>option 3</option>
+										<option>option 4</option>
+										<option>option 5</option>
+									</select>
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Adv. Rates (%)</label>
+									<input class="form-control" id="inputPassword3" placeholder="80.0000">
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Max Concentration (%)</label>
+									<input class="form-control" id="inputPassword3">
+								</div>
+								<div class="col-md-2">
+									<label for="inputPassword3">Frecuency</label>
+									<select class="form-control">
+										<option>Quarterly</option>
+									</select>
+								</div>
+								<div class="col-md-4">
+									<label for="inputPassword3">Comments</label>
+									<input class="form-control" id="inputPassword3">
+								</div>
+							</div>
+							<br />
+							<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Borrowing Base Ineligibles</h2>
+							<div class="tab-content">
+								<div class="row">
+									<div class="col-md-6">
+										<label for="inputPassword3">Accounts</label>
+										<select class="form-control">
+											<option>Accounts 90+ Days Delinquent</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+											<option>option 5</option>
+										</select>
+									</div>
+									<div class="col-md-6">
+										<label for="inputPassword3">Comments</label>
+										<input class="form-control" id="inputPassword3">
+									</div>
+								</div>
+
+							</div>
+							<br />
+
+
+							<div class="tab-content">
+								<h2 class="page-header" style="color: #997746"><b>Guarrantor: Test, Darlene (123789456)</b></h2>
+								<div class="tab-pane active" id="tab_1">
+									<h2 class="page-header" style="margin-top: 0px; text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Financial Statement Reporting</h2>
+
+									<div class="row">
+										<div class="col-md-3">
+											<label for="inputPassword3">Tax</label>
+											<select class="form-control">
+												<option>Personal Financial Statement</option>
+												<option>option 2</option>
+												<option>option 3</option>
+												<option>option 4</option>
+												<option>option 5</option>
+											</select>
+										</div>
+										<div class="col-md-3">
+											<label for="inputPassword3">Annually</label>
+											<select class="form-control">
+												<option>Annually</option>
+												<option>option 2</option>
+												<option>option 3</option>
+												<option>option 4</option>
+												<option>option 5</option>
+											</select>
+										</div>
+										<div class="col-md-3">
+											<label for="inputPassword3">Grace Period</label>
+											<input class="form-control" id="inputPassword3">
+										</div>
+										<div class="col-md-3">
+											<label for="inputPassword3">Document Date</label>
+											<input class="form-control" id="inputPassword3">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<select class="form-control">
+												<option>Tax Return / Compilied</option>
+												<option>option 2</option>
+												<option>option 3</option>
+												<option>option 4</option>
+												<option>option 5</option>
+											</select>
+										</div>
+										<div class="col-md-3">
+											<select class="form-control">
+												<option>Anually</option>
+												<option>option 2</option>
+												<option>option 3</option>
+												<option>option 4</option>
+												<option>option 5</option>
+											</select>
+										</div>
+										<div class="col-md-3">
+											<input class="form-control" id="inputPassword3">
+										</div>
+										<div class="col-md-3">
+											<input class="form-control" id="inputPassword3">
+										</div>
+									</div>
+									<br />
+
+								</div>
+								<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Quantitative Covenants</h2>
+								<div class="row">
+									<div class="col-md-2">
+										<label for="inputPassword3">DSC</label>
+										<select class="form-control">
+											<option>Minimum Liquidity</option>
 											<option>option 2</option>
 											<option>option 3</option>
 											<option>option 4</option>
@@ -291,175 +502,35 @@
 										</select>
 									</div>
 									<div class="col-md-2">
-										<label for="inputPassword3">Tax ID / SSN</label>
+										<label for="inputPassword3">Required</label>
 										<input class="form-control" id="inputPassword3">
 									</div>
 									<div class="col-md-2">
-										<label for="inputPassword3">Company Name</label>
+										<label for="inputPassword3">Actual</label>
 										<input class="form-control" id="inputPassword3">
 									</div>
 									<div class="col-md-2">
-										<label for="inputPassword3">Primary Bussiness</label>
+										<label for="inputPassword3">Frecuency</label>
+										<select class="form-control">
+											<option>Select..</option>
+										</select>
+									</div>
+									<div class="col-md-2">
+										<label for="inputPassword3">Annual</label>
 										<input class="form-control" id="inputPassword3">
 									</div>
 									<div class="col-md-2">
-										<label for="inputPassword3">Email Address</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Type of Guaranty</label>
+										<label for="inputPassword3">Interin</label>
 										<input class="form-control" id="inputPassword3">
 									</div>
 								</div>
 								<br />
+								<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Borrowing Base</h2>
 								<div class="row">
 									<div class="col-md-2">
-										<label for="inputPassword3">Obligor Type</label>
+										<label for="inputPassword3">Accounts</label>
 										<select class="form-control">
-											<option>Borrower </option>
-										</select>
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Job Title</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Secondary Phone</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Amount of Ownership</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Email Address</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Annual Income</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-								</div>
-								<br />
-								<div class="row">
-									<div class="col-md-6">
-										<label for="inputPassword3">Does the Guarantor inted to apply for joint credit?</label>
-										<select class="form-control">
-											<option>Select.. </option>
-										</select>
-
-									</div>
-
-									<div class="col-md-6">
-										<label for="inputPassword3">Was the Guarantor required as condition for grant of credit?</label>
-										<select class="form-control">
-											<option>Select.. </option>
-										</select>
-
-									</div>
-								</div>
-
-
-
-							</div>
-							<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Beneficial Owners of Legacy Entity</h2>
-							<div class="row">
-								<div id="hiddenDiv2">
-									<div class="col-md-12">
-										<div class="box-body">
-											<div class="form-group">
-												<label for="inputEmail3">Beneficial Owners Notes/Comments</label>
-												<input class="form-control" id="inputPassword3">
-											</div>
-										</div><!-- /.box-body -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Address Information</h2>
-						<br />
-						<div class="tab-content">
-							<div class="row">
-								<div class="col-md-2">
-									<label for="inputEmail3">Address Line 1</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Address Line 2</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">City</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Country</label>
-									<select class="form-control">
-										<option>United States</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">State</label>
-									<select class="form-control">
-										<option>Texas</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Postal Code</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-							</div>
-							<br />
-							<div class="row">
-								<div class="col-md-2">
-									<label for="inputEmail3">Address Line 1</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Address Line 2</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">City</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Country</label>
-									<select class="form-control">
-										<option>United States</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">State</label>
-									<select class="form-control">
-										<option>Texas</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Postal Code</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-							</div>
-						</div>
-
-
-						<div class="tab-content">
-							<h2 class="page-header" style="color: #997746"><b>Obligor 2</b></h2>
-							<div class="tab-pane active" id="tab_1">
-
-								<div class="row">
-									<div class="col-md-2">
-										<label for="inputEmail3">Entity Type</label>
-										<select class="form-control">
-											<option>Corporation</option>
+											<option>Accounts Receivable</option>
 											<option>option 2</option>
 											<option>option 3</option>
 											<option>option 4</option>
@@ -467,193 +538,55 @@
 										</select>
 									</div>
 									<div class="col-md-2">
-										<label for="inputPassword3">Tax ID / SSN</label>
+										<label for="inputPassword3">Adv. Rates (%)</label>
+										<input class="form-control" id="inputPassword3" placeholder="80.0000">
+									</div>
+									<div class="col-md-2">
+										<label for="inputPassword3">Max Concentration (%)</label>
 										<input class="form-control" id="inputPassword3">
 									</div>
 									<div class="col-md-2">
-										<label for="inputPassword3">Company Name</label>
-										<input class="form-control" id="inputPassword3">
+										<label for="inputPassword3">Frecuency</label>
+										<select class="form-control">
+											<option>Quarterly</option>
+										</select>
 									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Primary Bussiness</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Email Address</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Type of Guaranty</label>
+									<div class="col-md-4">
+										<label for="inputPassword3">Comments</label>
 										<input class="form-control" id="inputPassword3">
 									</div>
 								</div>
 								<br />
-								<div class="row">
-									<div class="col-md-2">
-										<label for="inputPassword3">Obligor Type</label>
-										<select class="form-control">
-											<option>Borrower </option>
-										</select>
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Job Title</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Secondary Phone</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Amount of Ownership</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Email Address</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-									<div class="col-md-2">
-										<label for="inputPassword3">Annual Income</label>
-										<input class="form-control" id="inputPassword3">
-									</div>
-								</div>
-								<br />
-								<div class="row">
-									<div class="col-md-6">
-										<label for="inputPassword3">Does the Guarantor inted to apply for joint credit?</label>
-										<select class="form-control">
-											<option>Select.. </option>
-										</select>
-
+								<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Borrowing Base</h2>
+								<div class="tab-content">
+									<div class="row">
+										<div class="col-md-6">
+											<label for="inputPassword3">Accounts</label>
+											<select class="form-control">
+												<option>Accounts 90+ Days Delinquent</option>
+												<option>option 2</option>
+												<option>option 3</option>
+												<option>option 4</option>
+												<option>option 5</option>
+											</select>
+										</div>
+										<div class="col-md-6">
+											<label for="inputPassword3">Comments</label>
+											<input class="form-control" id="inputPassword3">
+										</div>
 									</div>
 
-									<div class="col-md-6">
-										<label for="inputPassword3">Was the Guarantor required as condition for grant of credit?</label>
-										<select class="form-control">
-											<option>Select.. </option>
-										</select>
-
-									</div>
-								</div>
-
-
-
-							</div>
-							<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Beneficial Owners of Legacy Entity</h2>
-							<div class="row">
-								<div id="hiddenDiv2">
-									<div class="col-md-12">
-										<div class="box-body">
-											<div class="form-group">
-												<label for="inputEmail3">Beneficial Owners Notes/Comments</label>
-												<input class="form-control" id="inputPassword3">
-											</div>
-										</div><!-- /.box-body -->
-									</div>
 								</div>
 							</div>
+							
 						</div>
-						<h2 class="page-header" style="text-align: center;font-family: Gilroy Bold,Helvetica,Arial,sans-serif; color:#fff; background-color:#003768">Address Information</h2>
-						<br />
-						<div class="tab-content">
-							<div class="row">
-								<div class="col-md-2">
-									<label for="inputEmail3">Address Line 1</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Address Line 2</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">City</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Country</label>
-									<select class="form-control">
-										<option>United States</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">State</label>
-									<select class="form-control">
-										<option>Texas</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Postal Code</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-							</div>
-							<br />
-							<div class="row">
-								<div class="col-md-2">
-									<label for="inputEmail3">Address Line 1</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Address Line 2</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">City</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Country</label>
-									<select class="form-control">
-										<option>United States</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">State</label>
-									<select class="form-control">
-										<option>Texas</option>
-										<option></option>
-
-									</select>
-								</div>
-								<div class="col-md-2">
-									<label for="inputPassword3">Postal Code</label>
-									<input class="form-control" id="inputPassword3">
-								</div>
-							</div>
-						</div>
-
+					</div>
+				</div>
 
 					</div>
 				</div>
-			</div>
-
-	</div>
-	</form>
-	</div>
 
 
-
-
-
-
-
-	</div>
-	</div>
-	</div>
-	</div><!-- /.tab-pane -->
-	</div>
-	<!-- /.tab-pane -->
-	</div><!-- /.tab-content -->
-	</div><!-- nav-tabs-custom -->
-	</div><!-- /.col -->
-	<!-- END CUSTOM TABS -->
-	</section><!-- /.Left col -->
-	<!-- right col (We are only adding the ID to make the widgets sortable)-->
-	</div><!-- /.content-wrapper -->
 	<!-- jQuery 2.1.4 -->
 	<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
 	<!-- jQuery UI 1.11.4 -->
@@ -719,31 +652,7 @@
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
 						<h2 class="page-header" style="color: #997746">Loan Documents</h2>
 						<ul class="treeview-menu">
-							<li class="active"><a href="general.html"><i></i> Application</a></li>
-							<li class="active"><a href="general.html"><i></i> Appraisal - apt 1</a></li>
-							<li class="active"><a href="general.html"><i></i> Appraisal - apt 3</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - First</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - Second</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - Review</a></li>
-							<li class="active"><a href="general.html"><i></i> Auto debit / ACH</a></li>
-							<li class="active"><a href="general.html"><i></i> BSA-CAG</a></li>
-							<li class="active"><a href="general.html"><i></i> Census Tract</a></li>
-							<li class="active"><a href="general.html"><i></i> Commitment Letter</a></li>
-							<li class="active"><a href="general.html"><i></i> FFIEC</a></li>
-							<li class="active"><a href="general.html"><i></i> Flood Determination</a></li>
-							<li class="active"><a href="general.html"><i></i> Flood Insurance</a></li>
-							<li class="active"><a href="general.html"><i></i> Memo To Credit</a></li>
-							<li class="active"><a href="general.html"><i></i> Non-Escrow Notice</a></li>
-							<li class="active"><a href="general.html"><i></i> OLC/DLC Ratification</a></li>
-							<li class="active"><a href="general.html"><i></i> PEP Loan</a></li>
-							<li class="active"><a href="general.html"><i></i> Promissory Note</a></li>
-							<li class="active"><a href="general.html"><i></i> Survey "as built"</a></li>
-							<li class="active"><a href="general.html"><i></i> Tax Service Report</a></li>
-							<li class="active"><a href="general.html"><i></i> Taxes Paid - City</a></li>
-							<li class="active"><a href="general.html"><i></i> Taxes Paid - Country</a></li>
-							<li class="active"><a href="general.html"><i></i> Taxes Paid - School</a></li>
-							<li class="active"><a href="general.html"><i></i> Underwriting Package</a></li>
-							<li class="active"><a href="general.html"><i></i> Warranty Deed</a></li>
+							<li class="active"><a href="general.html"><i></i> Appraisal of Receipt</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -753,14 +662,7 @@
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
 						<h2 class="page-header" style="color: #997746">Customer Documents</h2>
 						<ul class="treeview-menu">
-							<li class="active"><a href="general.html"><i></i> Certificate of Existence</a></li>
-							<li class="active"><a href="general.html"><i></i> Contingent Liability</a></li>
-							<li class="active"><a href="general.html"><i></i> Credit Report</a></li>
-							<li class="active"><a href="general.html"><i></i> Financial Statement</a></li>
-							<li class="active"><a href="general.html"><i></i> K-1 - 222222</a></li>
-							<li class="active"><a href="general.html"><i></i> Payroll Tax Receipts</a></li>
-							<li class="active"><a href="general.html"><i></i> Personal Cash Flow - 222</a></li>
-							<li class="active"><a href="general.html"><i></i> Personal Tax Returns</a></li>
+							<li class="active"><a href="general.html"><i></i> Audited Financial - 9832</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -768,7 +670,7 @@
 		</div>
 	</aside>
 
-	<footer class="main-footer" style="margin-top: 4px;">
+	<footer class="main-footer">
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0
 		</div>
