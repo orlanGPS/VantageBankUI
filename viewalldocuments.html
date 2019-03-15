@@ -51,28 +51,30 @@
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only">Toggle navigation</span>
             </a>
-            <div class="navbar-custom-menu">
-                <section class="content-header">
-                    <ol class="breadcrumb" style="right: 640px;width:435px; position:fixed">
-                        <li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> Credit Workbench</a></li>
-                        <li style="color:#fff"> Documents</li>
-                        <li style="color:#fff">Loan 000007 </li>
-                        <li class="active">All documents</li>
-                    </ol>
-                </section>
-                <ul class="nav navbar-nav" style="margin-top: -15px">
 
-                    <li>
-                        <a href="#" data-toggle="control-sidebar"><i class="fa  fa-home"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="control-sidebar"><i class="fa  fa-star-o"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-                </ul>
-            </div>
+			<div class="navbar-custom-menu">
+			
+				<section class="content-header">
+					<ol class="breadcrumb" style="right: 640px;width:435px; position:fixed">
+						<li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
+						<li style="color:#fff"> Loan 000007</li>
+						<li style="color:#fff">Documents </li>
+						<li class="active">All Documents</li>
+					</ol>
+				</section>
+				<ul class="nav navbar-nav" style="margin-top: -15px">
+
+					<li>
+						<a href="index.html" data-toggle="control-sidebar"><i class="fa  fa-home"></i></a>
+					</li>
+					<li>
+						<a href="RelationshipActionForm.html" data-toggle="control-sidebar"><i class="fa  fa-star-o"></i></a>
+					</li>
+					<li>
+						<a href="#" data-toggle="control-sidebar"><i class="fa fa-chevron-down"></i></a>
+					</li>
+				</ul>
+			</div>
         </nav>
         <li class="header" style="height:4px; background-color:#cf1526"></li>
     </header>
@@ -86,148 +88,193 @@
             <aside class="main-sidebar" style="height: 451%;">
                 <section class="sidebar">
                     <ul class="sidebar-menu">
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
-                                <li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
+							</a>
+							<ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
+								<li class="active"><a href="general.html"><i class="fa fa-tachometer"></i>My Work</a></li>
 
-                                <li class="treeview active">
-                                    <a href="index.html" style="margin-left: 13%;">
-                                        <span>Dashboard</span>
-                                        <span class="pull-right-container">
-                                            <i class="fa fa-angle-left pull-right"></i>
-                                        </span>
-                                    </a>
-                                    <a href="#" style="margin-left: 13%;">
-                                        <span>Credit Workbench</span>
-                                        <span class="pull-right-container">
-                                            <i class="fa fa-angle-left pull-right"></i>
-                                        </span>
-                                    </a>
-                                    <ul class="treeview-menu active">
-                                        <li>
-                                            <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                <i class="fa @seventhLevel.NombreImagen"></i>
-                                                <span>
-                                                    Loan 000007
-                                                    <i class="fa fa-angle-down pull-right"></i>
-                                                </span>
-                                            </a>
-                                            <ul class="treeview-menu" style="display: contents;">
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Credit Overview
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Loan
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="Obligor.html">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Obligor
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Rate & Repayment
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="Collateral.html" >
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Collateral
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Deposit & Debt
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="FinancialTracking.html">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Financial Tracking
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Approval
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Disbursement
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Stage Gate Check
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
-                                                        <i class="fa @seventhLevel.NombreImagen"></i>
-                                                        <span>
-                                                            Full View
-                                                            <i class="fa  fa-angle-right pull-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
+								<li class="treeview active">
+									<a href="index.html" style="margin-left: 13%;">
+										<span>Dashboard</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Loan 000007</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<ul class="treeview-menu active">
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Credit Workbench
+													<i class="fa fa-angle-down pull-right"></i>
+												</span>
+											</a>
+											<ul class="treeview-menu active menu-open" style="display: contents;">
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Credit Overview
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="Loan.html">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Loan
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="Obligor.html">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Obligor
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Rate & Repayment
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="collateral.html">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Collateral
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Deposit & Debt
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="FinancialTracking.html">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Financial Tracking
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Approval
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Disbursement
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Stage Gate Check
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+														<i class="fa @seventhLevel.NombreImagen"></i>
+														<span>
+															Full View
+															<i class="fa  fa-angle-right pull-left"></i>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
 
-                                    </ul>
+									</ul>
 
-                                </li>
+								</li>
 
-                                <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Reports</a></li>
-                                <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Utilities</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-files-o"></i> Documents</a></li>
+								<li class="treeview active">
+									<a href="viewalldocuments.html" style="margin-left: 13%;">
+										<span  style="font-weight: bold; font-style: italic;">View All</span>
+										<span class="pull-right-container">
+											<i class="fa  fa-angle-right pull-left"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Loan Documents</span>
+										<span class="pull-right-container">
+											<i class="fa  fa-angle-right pull-left"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Doc 1</span>
+										<span class="pull-right-container">
+											<i class="fa  fa-angle-right pull-left"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Doc 2</span>
+										<span class="pull-right-container">
+											<i class="fa  fa-angle-right pull-left"></i>
+										</span>
+									</a>
 
+								</li>
+
+								<li class="active"><a href="index.html"><i class="fa fa-user"></i> Customer Documents</a></li>
+								<li class="treeview active">
+									<a href="#" style="margin-left: 13%;">
+										<span>Doc 3</span>
+										<span class="pull-right-container">
+											<i class="fa  fa-angle-right pull-left"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Doc 4</span>
+										<span class="pull-right-container">
+											<i class="fa  fa-angle-right pull-left"></i>
+										</span>
+									</a>
+
+								</li>
+							</ul>
+						</li>
+
+                              
                             </ul>
-                        </li>
-                    </ul>
+                 
                 </section>
                 <header class="main-header">
                     <a href="#" class="sidebar-toggle2" data-toggle="offcanvas" role="button">
@@ -241,7 +288,7 @@
                     <form class="form-horizontal">
 
                         <a href="#" class="btn btn-primary btn-sm ad-click-event" style='text-align: right; width:98px; height:29px' onclick=(@Model.FacturaID)>
-                            add Documents
+                            Add Documents
                         </a>
                         <div class="row">
                             <div class="col-xs-12">
