@@ -41,7 +41,7 @@
 
         <nav class="navbar navbar-static-top" role="navigation">
 
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" style="margin-top: -6px;">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b><img src="dist/img/VBT_logo_white.png" class="img-responsive" alt="User Image"></b></span>
                 <!-- logo for regular state and mobile devices -->
@@ -57,7 +57,7 @@
                         <li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> Credit Workbench</a></li>
                         <li style="color:#fff"> Documents</li>
                         <li style="color:#fff">Loan 000007 </li>
-                        <li class="active">View all documents</li>
+                        <li class="active">All documents</li>
                     </ol>
                 </section>
                 <ul class="nav navbar-nav" style="margin-top: -15px">
@@ -115,7 +115,7 @@
                                                     <i class="fa fa-angle-down pull-right"></i>
                                                 </span>
                                             </a>
-                                            <ul class="treeview-menu">
+                                            <ul class="treeview-menu" style="display: contents;">
                                                 <li>
                                                     <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
                                                         <i class="fa @seventhLevel.NombreImagen"></i>
@@ -135,7 +135,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)" style="font-weight: bold; font-style: italic;">
+                                                    <a href="Obligor.html">
                                                         <i class="fa @seventhLevel.NombreImagen"></i>
                                                         <span>
                                                             Obligor
@@ -153,7 +153,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+                                                    <a href="Collateral.html" >
                                                         <i class="fa @seventhLevel.NombreImagen"></i>
                                                         <span>
                                                             Collateral
@@ -171,7 +171,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+                                                    <a href="FinancialTracking.html">
                                                         <i class="fa @seventhLevel.NombreImagen"></i>
                                                         <span>
                                                             Financial Tracking
@@ -451,7 +451,7 @@
             <li><a href="#control-tab2" data-toggle="tab"><i class="fa fa-users"></i></a></li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane" id="control-sidebar-home-tab">
+            <div class="tab-pane active" id="control-sidebar-home-tab">
                 <ul class="control-sidebar-menu">
                     <li class="treeview" style="margin-top: 20px; margin-left: 15px">
                         <h2 class="page-header" style="color: #997746">ACE Credit Workbench</h2>
