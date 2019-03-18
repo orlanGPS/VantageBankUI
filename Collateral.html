@@ -1,49 +1,111 @@
 ﻿<!DOCTYPE html>
 <html>
 <head class="main-header">
-    <meta charset="UTF-8">
-    <!--<title>AdminLTE 2 | Dashboard</title>-->
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.4 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Ionicons 2.0.0 -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
-    <!-- Morris chart -->
-    <link rel="stylesheet" href="plugins/morris/morris.css">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
-    <!-- Date Picker -->
-    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
-    <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
-        .content {
-            min-height: 250px;
-            padding: 0px;
-            margin-right: auto;
-            margin-left: auto;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<!--<title>AdminLTE 2 | Dashboard</title>-->
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.4 -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Ionicons 2.0.0 -->
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	<!-- AdminLTE Skins. Choose a skin from the css/skins
+		 folder instead of downloading all of them to reduce the load. -->
+	<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+	<!-- iCheck -->
+	<link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+	<!-- Morris chart -->
+	<link rel="stylesheet" href="plugins/morris/morris.css">
+	<!-- jvectormap -->
+	<link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+	<!-- Daterange picker -->
+	<link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
+	<!-- bootstrap wysihtml5 - text editor -->
+	<link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		.content {
+			min-height: 250px;
+			padding: 0px;
+			margin-right: auto;
+			margin-left: auto;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	</style>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+			.dropdown .dropbtn {
+				font-size: 12px;
+				border: none;
+				outline: none;
+				color: white;
+				padding: 14px 16px;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
+			}
+
+			.navbar a:hover, .dropdown:hover .dropbtn {
+				background-color: #003678;
+			}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+			.dropdown-content a {
+				float: none;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+
+				.dropdown-content a:hover {
+					background-color: #ddd;
+				}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.show {
+			display: block;
+		}
+
+		.sidebar-menu ex1 {
+			background-color: lightblue;
+			width: 110px;
+			height: 110px;
+			overflow: scroll;
+		}
+	</style>
 </head>
 
 <body class="skin-blue sidebar-mini">
@@ -62,11 +124,22 @@
 				<span class="sr-only">Toggle navigation</span>
 			</a>
 			<div class="navbar-custom-menu">
+				<div class="dropdown" style="margin-left: -994px; margin-top: 6px;">
+					<button class="dropbtn" onclick="myFunction()">
+						Commercial Lending
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
 				<section class="content-header">
-					<ol class="breadcrumb" style="right: 698px;width:392px; position:fixed">
+					<ol class="breadcrumb" style="right: 533px;width:392px; position:fixed">
 						<li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
-						<li style="color:#fff">Credit Workbench </li>
 						<li style="color:#fff">Loan 000007 </li>
+						<li style="color:#fff">Credit Workbench </li>
 						<li class="active">Collateral</li>
 					</ol>
 				</section>
@@ -96,13 +169,14 @@
 		<section class="content">
 			<aside class="main-sidebar" style="height: 451%;">
 				<section class="sidebar">
+
 					<ul class="sidebar-menu">
 						<li class="treeview">
 							<a href="#">
 								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
 							</a>
-							<ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
-								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
+							<ul class="treeview-menu menu-open" style="overflow-y: scroll !important; display:block; position: fixed;width: 224px; margin-left: 3px;">
+								<li class="active"><a href="general.html"><i class="fa fa-tachometer"></i>My Work</a></li>
 
 								<li class="treeview active">
 									<a href="index.html" style="margin-left: 13%;">
@@ -112,7 +186,7 @@
 										</span>
 									</a>
 									<a href="#" style="margin-left: 13%;">
-										<span>Credit Workbench</span>
+										<span>Loan 000007</span>
 										<span class="pull-right-container">
 											<i class="fa fa-angle-left pull-right"></i>
 										</span>
@@ -122,11 +196,11 @@
 											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
 												<i class="fa @seventhLevel.NombreImagen"></i>
 												<span>
-													Loan 000007
+													Credit Workbench
 													<i class="fa fa-angle-down pull-right"></i>
 												</span>
 											</a>
-											<ul class="treeview-menu" style="display: contents;">
+											<ul class="treeview-menu active menu-open" style="display: contents;">
 												<li>
 													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
 														<i class="fa @seventhLevel.NombreImagen"></i>
@@ -137,7 +211,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+													<a href="Loan.html">
 														<i class="fa @seventhLevel.NombreImagen"></i>
 														<span>
 															Loan
@@ -164,7 +238,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="Collateral.html" style="font-weight: bold; font-style: italic;">
+													<a href="collateral.html" style="font-weight: bold; font-style: italic;">
 														<i class="fa @seventhLevel.NombreImagen"></i>
 														<span>
 															Collateral
@@ -233,12 +307,382 @@
 
 								</li>
 
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Reports</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Utilities</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-files-o"></i> Documents</a></li>
+								<li class="treeview active">
+									<a href="viewalldocuments.html" style="margin-left: 13%;">
+										<span>View All</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Loan Documents</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<ul class="treeview-menu active">
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application
 
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 1
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 2
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 2
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 3
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Appraisal / Evaluation 1
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Appraisal / Evaluation 2
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Appraisal / Review
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Altoryney's Representation
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Auto Debir / ACH
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													BSA - CAG Form
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Census Tract
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Commitment Letter
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													CRA Form
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Disclaimer of Oral
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													FFIEC
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Filed Assigment
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Filed Deep
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Flood Determination
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Govt Monitoring
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Loan Modification
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Loan Worksheet
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													PEP Loan
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Promissory Note
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Survey as built
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Taxes Paid
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Taxes Paid - School
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Underwritting
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Warranty Deed
+												</span>
+											</a>
+										</li>
+
+									</ul>
+
+								</li>
+
+
+								<li class="treeview active">
+									<a href="#" style="margin-left: 13%;">
+										<span>Customer Documents</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<ul class="treeview-menu active">
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Certificate of Existense
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Contigent Liability
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Financial Statement
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													K-1 2222
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Payroll Tax 1111
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Personal Cash
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Personal Financial
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Personal Tax
+
+												</span>
+											</a>
+
+										</li>
+
+									</ul>
+									<a href="#" style="margin-left: 13%;">
+										<span>Reports</span>
+										<span class="pull-right-container">
+											<i class="fa fa-circle-o"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Utilities</span>
+										<span class="pull-right-container">
+											<i class="fa fa-circle-o"></i>
+										</span>
+									</a>
+								</li>
 							</ul>
 						</li>
 					</ul>
+
 				</section>
 				<header class="main-header">
 					<a href="#" class="sidebar-toggle2" data-toggle="offcanvas" role="button">
@@ -266,7 +710,7 @@
 			<!--</div>-->
 			<div class="row">
 				<div class="col-md-12">
-					
+
 					<div class="nav-tabs-custom">
 						<div class="tab-content">
 							<h2 class="page-header" style="color: #997746">Collateral 1-Real Estate</h2>
@@ -858,11 +1302,11 @@
 
 						</div>
 					</div>
+				</div>
 			</div>
-	</div>
 
-	</section><!-- /.Left col -->
-	<!-- right col (We are only adding the ID to make the widgets sortable)-->
+		</section><!-- /.Left col -->
+		<!-- right col (We are only adding the ID to make the widgets sortable)-->
 	</div><!-- /.content-wrapper -->
 	<!-- jQuery 2.1.4 -->
 	<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
@@ -912,14 +1356,13 @@
 			<div class="tab-pane active" id="control-sidebar-home-tab">
 				<ul class="control-sidebar-menu">
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
-						<h2 class="page-header" style="color: #997746">ACE Credit Workbench</h2>
+						<h2 class="page-header" style="color: #997746">ACE Actions</h2>
 						<ul class="treeview-menu">
 							<li class="active"><a href="general.html"><i></i> CIP / CDD</a></li>
 							<li class="active"><a href="general.html"><i></i> Request Appraisal</a></li>
 							<li class="active"><a href="general.html"><i></i> Booking View</a></li>
 							<li class="active"><a href="general.html"><i></i> Create Renewal</a></li>
 							<li class="active"><a href="general.html"><i></i> Copy Loan</a></li>
-							<li class="active"><a href="viewalldocuments.html"><i></i> View All Documents</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -927,13 +1370,13 @@
 			<div class="tab-pane" id="control-sidebar-settings-tab">
 				<ul class="control-sidebar-menu">
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
-						<h2 class="page-header" style="color: #997746">Loan Documents</h2>
+						<h2 class="page-header" style="color: #997746">TBD</h2>
 						<ul class="treeview-menu">
-							<li class="active"><a href="general.html"><i></i> Application</a></li>
-							<li class="active"><a href="general.html"><i></i> Appraisal - apt 1</a></li>
-							<li class="active"><a href="general.html"><i></i> Appraisal - apt 3</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - First</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - Second</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 1</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 2</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 3</a></li>
+							<!--<li class="active"><a href="general.html"><i></i> Evaluation - First</a></li>-->
+							<!--<li class="active"><a href="general.html"><i></i> Evaluation - Second</a></li>
 							<li class="active"><a href="general.html"><i></i> Evaluation - Review</a></li>
 							<li class="active"><a href="general.html"><i></i> Auto debit / ACH</a></li>
 							<li class="active"><a href="general.html"><i></i> BSA-CAG</a></li>
@@ -953,7 +1396,7 @@
 							<li class="active"><a href="general.html"><i></i> Taxes Paid - Country</a></li>
 							<li class="active"><a href="general.html"><i></i> Taxes Paid - School</a></li>
 							<li class="active"><a href="general.html"><i></i> Underwriting Package</a></li>
-							<li class="active"><a href="general.html"><i></i> Warranty Deed</a></li>
+							<li class="active"><a href="general.html"><i></i> Warranty Deed</a></li>-->
 						</ul>
 					</li>
 				</ul>
@@ -961,16 +1404,11 @@
 			<div class="tab-pane" id="control-tab2">
 				<ul class="control-sidebar-menu">
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
-						<h2 class="page-header" style="color: #997746">Customer Documents</h2>
+						<h2 class="page-header" style="color: #997746">TBD</h2>
 						<ul class="treeview-menu">
-							<li class="active"><a href="general.html"><i></i> Certificate of Existence</a></li>
-							<li class="active"><a href="general.html"><i></i> Contingent Liability</a></li>
-							<li class="active"><a href="general.html"><i></i> Credit Report</a></li>
-							<li class="active"><a href="general.html"><i></i> Financial Statement</a></li>
-							<li class="active"><a href="general.html"><i></i> K-1 - 222222</a></li>
-							<li class="active"><a href="general.html"><i></i> Payroll Tax Receipts</a></li>
-							<li class="active"><a href="general.html"><i></i> Personal Cash Flow - 222</a></li>
-							<li class="active"><a href="general.html"><i></i> Personal Tax Returns</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 4</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 5</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 6</a></li>
 						</ul>
 					</li>
 				</ul>

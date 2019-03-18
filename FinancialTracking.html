@@ -1,6 +1,68 @@
 ﻿<!DOCTYPE html>
 <html>
 <head class="main-header">
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+			.dropdown .dropbtn {
+				font-size: 12px;
+				border: none;
+				outline: none;
+				color: white;
+				padding: 14px 16px;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
+			}
+
+			.navbar a:hover, .dropdown:hover .dropbtn {
+				background-color: #003678;
+			}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+			.dropdown-content a {
+				float: none;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+
+				.dropdown-content a:hover {
+					background-color: #ddd;
+				}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.show {
+			display: block;
+		}
+
+		.sidebar-menu ex1 {
+			background-color: lightblue;
+			width: 110px;
+			height: 110px;
+			overflow: scroll;
+		}
+	</style>
 	<meta charset="UTF-8">
 	<!--<title>AdminLTE 2 | Dashboard</title>-->
 	<!-- Tell the browser to be responsive to screen width -->
@@ -52,11 +114,22 @@
 				<span class="sr-only">Toggle navigation</span>
 			</a>
 			<div class="navbar-custom-menu">
+				<div class="dropdown" style="margin-left: -994px; margin-top: 6px;">
+					<button class="dropbtn" onclick="myFunction()">
+						Commercial Lending
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
 				<section class="content-header">
-					<ol class="breadcrumb" style="right: 657px;width:412px; position:fixed">
+					<ol class="breadcrumb" style="right: 533px;width:412px; position:fixed">
 						<li><a href="index.html"><i class="fa fa-dashboard" style="color:#fff"></i> My Work</a></li>
-						<li style="color:#fff">Credit Workbench </li>
 						<li style="color:#fff">Loan 000007 </li>
+						<li style="color:#fff">Credit Workbench </li>
 						<li class="active">Financial Tracking</li>
 					</ol>
 				</section>
@@ -85,13 +158,14 @@
 		<section class="content">
 			<aside class="main-sidebar" style="height: 451%;">
 				<section class="sidebar">
+
 					<ul class="sidebar-menu">
 						<li class="treeview">
 							<a href="#">
 								<i class="fa fa-dashboard"></i> <span>My Work</span> <i class="fa fa-angle-left pull-right"></i>
 							</a>
-							<ul class="treeview-menu menu-open" style="display:block; position: fixed;width: 224px; margin-left: 3px;">
-								<li class="active"><a href="general.html"><i class="fa fa-circle-o"></i>My Work</a></li>
+							<ul class="treeview-menu menu-open" style="overflow-y: scroll !important; display:block; position: fixed;width: 224px; margin-left: 3px;">
+								<li class="active"><a href="general.html"><i class="fa fa-tachometer"></i>My Work</a></li>
 
 								<li class="treeview active">
 									<a href="index.html" style="margin-left: 13%;">
@@ -101,21 +175,21 @@
 										</span>
 									</a>
 									<a href="#" style="margin-left: 13%;">
-										<span>Credit Workbench</span>
+										<span>Loan 000007</span>
 										<span class="pull-right-container">
 											<i class="fa fa-angle-left pull-right"></i>
 										</span>
 									</a>
-									<ul class="treeview-menu menu-open">
+									<ul class="treeview-menu active">
 										<li>
 											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
 												<i class="fa @seventhLevel.NombreImagen"></i>
 												<span>
-													Loan 000007
+													Credit Workbench
 													<i class="fa fa-angle-down pull-right"></i>
 												</span>
 											</a>
-											<ul class="treeview-menu active" style="display: contents;">
+											<ul class="treeview-menu active menu-open" style="display: contents;">
 												<li>
 													<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
 														<i class="fa @seventhLevel.NombreImagen"></i>
@@ -126,7 +200,7 @@
 													</a>
 												</li>
 												<li>
-													<a href=Loan.html>
+													<a href="Loan.html">
 														<i class="fa @seventhLevel.NombreImagen"></i>
 														<span>
 															Loan
@@ -135,7 +209,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="Obligor.html">
+													<a href="Obligor.html" >
 														<i class="fa @seventhLevel.NombreImagen"></i>
 														<span>
 															Obligor
@@ -153,7 +227,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="Collateral.html">
+													<a href="collateral.html">
 														<i class="fa @seventhLevel.NombreImagen"></i>
 														<span>
 															Collateral
@@ -222,12 +296,382 @@
 
 								</li>
 
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Reports</a></li>
-								<li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Utilities</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-files-o"></i> Documents</a></li>
+								<li class="treeview active">
+									<a href="viewalldocuments.html" style="margin-left: 13%;">
+										<span>View All</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Loan Documents</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<ul class="treeview-menu active">
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application
 
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 1
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 2
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 2
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Application apt 3
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Appraisal / Evaluation 1
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Appraisal / Evaluation 2
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Appraisal / Review
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Altoryney's Representation
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Auto Debir / ACH
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													BSA - CAG Form
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Census Tract
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Commitment Letter
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													CRA Form
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Disclaimer of Oral
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													FFIEC
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Filed Assigment
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Filed Deep
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Flood Determination
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Govt Monitoring
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Loan Modification
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Loan Worksheet
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													PEP Loan
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Promissory Note
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Survey as built
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Taxes Paid
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Taxes Paid - School
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Underwritting
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Warranty Deed
+												</span>
+											</a>
+										</li>
+
+									</ul>
+
+								</li>
+
+
+								<li class="treeview active">
+									<a href="#" style="margin-left: 13%;">
+										<span>Customer Documents</span>
+										<span class="pull-right-container">
+											<i class="fa fa-angle-left pull-right"></i>
+										</span>
+									</a>
+									<ul class="treeview-menu active">
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Certificate of Existense
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Contigent Liability
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Financial Statement
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													K-1 2222
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Payroll Tax 1111
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Personal Cash
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Personal Financial
+
+												</span>
+											</a>
+
+										</li>
+										<li>
+											<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
+												<i class="fa @seventhLevel.NombreImagen"></i>
+												<span>
+													Personal Tax
+
+												</span>
+											</a>
+
+										</li>
+
+									</ul>
+									<a href="#" style="margin-left: 13%;">
+										<span>Reports</span>
+										<span class="pull-right-container">
+											<i class="fa fa-circle-o"></i>
+										</span>
+									</a>
+									<a href="#" style="margin-left: 13%;">
+										<span>Utilities</span>
+										<span class="pull-right-container">
+											<i class="fa fa-circle-o"></i>
+										</span>
+									</a>
+								</li>
 							</ul>
 						</li>
 					</ul>
+
 				</section>
 				<header class="main-header">
 					<a href="#" class="sidebar-toggle2" data-toggle="offcanvas" role="button">
@@ -635,14 +1079,13 @@
 			<div class="tab-pane active" id="control-sidebar-home-tab">
 				<ul class="control-sidebar-menu">
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
-						<h2 class="page-header" style="color: #997746">ACE Credit Workbench</h2>
+						<h2 class="page-header" style="color: #997746">ACE Actions</h2>
 						<ul class="treeview-menu">
 							<li class="active"><a href="general.html"><i></i> CIP / CDD</a></li>
 							<li class="active"><a href="general.html"><i></i> Request Appraisal</a></li>
 							<li class="active"><a href="general.html"><i></i> Booking View</a></li>
 							<li class="active"><a href="general.html"><i></i> Create Renewal</a></li>
 							<li class="active"><a href="general.html"><i></i> Copy Loan</a></li>
-							<li class="active"><a href="viewalldocuments.html"><i></i> View All Documents</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -650,33 +1093,33 @@
 			<div class="tab-pane" id="control-sidebar-settings-tab">
 				<ul class="control-sidebar-menu">
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
-						<h2 class="page-header" style="color: #997746">Loan Documents</h2>
+						<h2 class="page-header" style="color: #997746">TBD</h2>
 						<ul class="treeview-menu">
-							<li class="active"><a href="general.html"><i></i> Application</a></li>
-							<li class="active"><a href="general.html"><i></i> Appraisal - apt 1</a></li>
-							<li class="active"><a href="general.html"><i></i> Appraisal - apt 3</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - First</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - Second</a></li>
-							<li class="active"><a href="general.html"><i></i> Evaluation - Review</a></li>
-							<li class="active"><a href="general.html"><i></i> Auto debit / ACH</a></li>
-							<li class="active"><a href="general.html"><i></i> BSA-CAG</a></li>
-							<li class="active"><a href="general.html"><i></i> Census Tract</a></li>
-							<li class="active"><a href="general.html"><i></i> Commitment Letter</a></li>
-							<li class="active"><a href="general.html"><i></i> FFIEC</a></li>
-							<li class="active"><a href="general.html"><i></i> Flood Determination</a></li>
-							<li class="active"><a href="general.html"><i></i> Flood Insurance</a></li>
-							<li class="active"><a href="general.html"><i></i> Memo To Credit</a></li>
-							<li class="active"><a href="general.html"><i></i> Non-Escrow Notice</a></li>
-							<li class="active"><a href="general.html"><i></i> OLC/DLC Ratification</a></li>
-							<li class="active"><a href="general.html"><i></i> PEP Loan</a></li>
-							<li class="active"><a href="general.html"><i></i> Promissory Note</a></li>
-							<li class="active"><a href="general.html"><i></i> Survey "as built"</a></li>
-							<li class="active"><a href="general.html"><i></i> Tax Service Report</a></li>
-							<li class="active"><a href="general.html"><i></i> Taxes Paid - City</a></li>
-							<li class="active"><a href="general.html"><i></i> Taxes Paid - Country</a></li>
-							<li class="active"><a href="general.html"><i></i> Taxes Paid - School</a></li>
-							<li class="active"><a href="general.html"><i></i> Underwriting Package</a></li>
-							<li class="active"><a href="general.html"><i></i> Warranty Deed</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 1</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 2</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 3</a></li>
+							<!--<li class="active"><a href="general.html"><i></i> Evaluation - First</a></li>-->
+							<!--<li class="active"><a href="general.html"><i></i> Evaluation - Second</a></li>
+						<li class="active"><a href="general.html"><i></i> Evaluation - Review</a></li>
+						<li class="active"><a href="general.html"><i></i> Auto debit / ACH</a></li>
+						<li class="active"><a href="general.html"><i></i> BSA-CAG</a></li>
+						<li class="active"><a href="general.html"><i></i> Census Tract</a></li>
+						<li class="active"><a href="general.html"><i></i> Commitment Letter</a></li>
+						<li class="active"><a href="general.html"><i></i> FFIEC</a></li>
+						<li class="active"><a href="general.html"><i></i> Flood Determination</a></li>
+						<li class="active"><a href="general.html"><i></i> Flood Insurance</a></li>
+						<li class="active"><a href="general.html"><i></i> Memo To Credit</a></li>
+						<li class="active"><a href="general.html"><i></i> Non-Escrow Notice</a></li>
+						<li class="active"><a href="general.html"><i></i> OLC/DLC Ratification</a></li>
+						<li class="active"><a href="general.html"><i></i> PEP Loan</a></li>
+						<li class="active"><a href="general.html"><i></i> Promissory Note</a></li>
+						<li class="active"><a href="general.html"><i></i> Survey "as built"</a></li>
+						<li class="active"><a href="general.html"><i></i> Tax Service Report</a></li>
+						<li class="active"><a href="general.html"><i></i> Taxes Paid - City</a></li>
+						<li class="active"><a href="general.html"><i></i> Taxes Paid - Country</a></li>
+						<li class="active"><a href="general.html"><i></i> Taxes Paid - School</a></li>
+						<li class="active"><a href="general.html"><i></i> Underwriting Package</a></li>
+						<li class="active"><a href="general.html"><i></i> Warranty Deed</a></li>-->
 						</ul>
 					</li>
 				</ul>
@@ -684,16 +1127,11 @@
 			<div class="tab-pane" id="control-tab2">
 				<ul class="control-sidebar-menu">
 					<li class="treeview" style="margin-top: 20px; margin-left: 15px">
-						<h2 class="page-header" style="color: #997746">Customer Documents</h2>
+						<h2 class="page-header" style="color: #997746">TBD</h2>
 						<ul class="treeview-menu">
-							<li class="active"><a href="general.html"><i></i> Certificate of Existence</a></li>
-							<li class="active"><a href="general.html"><i></i> Contingent Liability</a></li>
-							<li class="active"><a href="general.html"><i></i> Credit Report</a></li>
-							<li class="active"><a href="general.html"><i></i> Financial Statement</a></li>
-							<li class="active"><a href="general.html"><i></i> K-1 - 222222</a></li>
-							<li class="active"><a href="general.html"><i></i> Payroll Tax Receipts</a></li>
-							<li class="active"><a href="general.html"><i></i> Personal Cash Flow - 222</a></li>
-							<li class="active"><a href="general.html"><i></i> Personal Tax Returns</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 4</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 5</a></li>
+							<li class="active"><a href="general.html"><i></i> Link 6</a></li>
 						</ul>
 					</li>
 				</ul>

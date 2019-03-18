@@ -1,82 +1,69 @@
 ﻿<!DOCTYPE html>
 <html>
-<style>
-	body {
-		font-family: Arial, Helvetica, sans-serif;
-	}
 
-	/*.navbar {
-		overflow: hidden;
-		background-color: #333;
-	}
+<head class="main-header">
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
 
-		.navbar a {
+		.dropdown {
 			float: left;
-			font-size: 16px;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}*/
-
-	.dropdown {
-		float: left;
-		overflow: hidden;
-	}
-
-		.dropdown .dropbtn {
-			font-size: 12px;
-			border: none;
-			outline: none;
-			color: white;
-			padding: 14px 16px;
-			background-color: inherit;
-			font-family: inherit;
-			margin: 0;
+			overflow: hidden;
 		}
 
-		.navbar a:hover, .dropdown:hover .dropbtn {
-			background-color: #003678;
-		}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f9f9f9;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	}
-
-		.dropdown-content a {
-			float: none;
-			color: black;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-			text-align: left;
-		}
-
-			.dropdown-content a:hover {
-				background-color: #ddd;
+			.dropdown .dropbtn {
+				font-size: 12px;
+				border: none;
+				outline: none;
+				color: white;
+				padding: 14px 16px;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
 			}
 
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
+			.navbar a:hover, .dropdown:hover .dropbtn {
+				background-color: #003678;
+			}
 
-	.show {
-		display: block;
-	}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
 
-	.sidebar-menu ex1 {
-		background-color: lightblue;
-		width: 110px;
-		height: 110px;
-		overflow: scroll;
-	}
-</style>
-<head class="main-header">
+			.dropdown-content a {
+				float: none;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+
+				.dropdown-content a:hover {
+					background-color: #ddd;
+				}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.show {
+			display: block;
+		}
+
+		.sidebar-menu ex1 {
+			background-color: lightblue;
+			width: 110px;
+			height: 110px;
+			overflow: scroll;
+		}
+	</style>
 	<meta charset="UTF-8">
 	<!--<title>AdminLTE 2 | Dashboard</title>-->
 	<!-- Tell the browser to be responsive to screen width -->
@@ -580,9 +567,15 @@
 										</ul>
 
 									</li>
-
-									<li class="active"><a href="index.html"><i class="fa fa-user"></i> Customer Documents</a></li>
+									
+									
 									<li class="treeview active">
+										<a href="#" style="margin-left: 13%;">
+											<span>Customer Documents</span>
+											<span class="pull-right-container">
+												<i class="fa fa-angle-left pull-right"></i>
+											</span>
+										</a>
 										<ul class="treeview-menu active">
 											<li>
 												<a href="@Url.Action(seventhLevel.Action, seventhLevel.Controller)">
@@ -664,9 +657,20 @@
 												</a>
 
 											</li>
-											
-										</ul>
 
+										</ul>
+										<a href="#" style="margin-left: 13%;">
+											<span>Reports</span>
+											<span class="pull-right-container">
+												<i class="fa fa-circle-o"></i>
+											</span>
+										</a>
+										<a href="#" style="margin-left: 13%;">
+											<span>Utilities</span>
+											<span class="pull-right-container">
+												<i class="fa fa-circle-o"></i>
+											</span>
+										</a>
 									</li>
 								</ul>
 							</li>
